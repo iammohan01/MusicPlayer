@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.leftPanel{
+    width: 25%;
+    height: 100%;
+}
+.mainPanel{
+    width: 75%;
+    height: 100%;
+    position: relative;
+}
+.title{
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 30px;
+    /* letter-spacing: 1px; */
+    padding: 20px;
+    font-weight: 600;
+}
+.recommended{
+    height: 25%;
+}
+.recommended > div{
+    height: 25%;
+    width: 100%;
+    padding-left: 20px;
+}
+.queue{
+    height: 67%;
+    overflow: scroll;
+}
+.queueList{
+    width: 100%;
+    height: 12%;
+    position: relative;
+}
+.songNumber{
+    height: 100%;
+    width: 15%;
+}
+.songImage{
+    height: 100%;
+    width: 20%;
+}
+.songTitle{
+    height: 100%;
+    width: 50%;
+}
+.songPlayButton{
+    height: 100%;
+    width: 15%;
+    cursor: pointer;
+}
+.songName, .songAuthor{
+    width: 100%;
+    padding-left: 20px;
+}
+.songName{
+    font-size: 17px;
+    font-weight: 600;
+}
+.songAuthor{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.422);
+}
+.banner{
+    height: 40%;
+    width: 100%;
+    justify-content: space-between;
+}
+.popularSongs{
+    height: 30%;
+}
+.popularArtists{
+    height: 30%;
+}
+.banner > nav{
+    height: 25%;
+    width: 35%;
+    justify-content: flex-start;
+    margin: 0 5%;
+
+}
+.searchBox{
+    height: 25%;
+    width: 25%;
+}
+.userProfile{
+    height: 25%;
+    aspect-ratio: 1/1;
+}

@@ -1,0 +1,36 @@
+.flx{
+    display: flex;
+}
+.flxCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flxColumn{
+    flex-direction: column;
+}
+.flxLeft{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.flxRight{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.flxBtm{
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+.h-100P{
+    height: 100%;
+}
+ul{
+    height: 100%;
+}
+li{
+    list-style-type: none;
+    padding: 0px 20px ;
+}
