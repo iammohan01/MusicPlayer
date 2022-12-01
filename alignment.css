@@ -81,24 +81,74 @@ body{
     width: 100%;
     justify-content: space-between;
 }
+
 .popularSongs{
     height: 30%;
 }
 .popularArtists{
     height: 30%;
 }
-.banner > nav{
+.banner > div:first-child{
     height: 25%;
+    width: 100%;
+    position: relative;
+}
+.banner > div > nav{
+    height: 100%;
     width: 35%;
     justify-content: flex-start;
     margin: 0 5%;
 
 }
 .searchBox{
-    height: 25%;
+    height: 100%;
     width: 25%;
+    margin: 0 5%;
+}
+.searchBox > div{
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+}
+.searchBox > div > input{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
 }
 .userProfile{
-    height: 25%;
+    height: 100%;
     aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+}
+.userProfile>img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.recommendedAlbum{
+    height: 75%;
+    width: 60%;
+}
+.albumTitle{
+    height: 30%;
+    padding: 0 40px ;
+    font-size: 25px;
+    font-weight: 600;
+}
+.albumDescription{
+    height: 40%;
+    padding: 10px 40px;
+}
+.albumButtons{
+    height: 30%;
+    gap: 30px;
+}
+.albumButtons > button {
+    width: 25%;
+    height: 50%;
+    border-radius: 25px;
 }
