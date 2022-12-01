@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
 body{
@@ -97,12 +97,12 @@ body{
     height: 100%;
     width: 35%;
     justify-content: flex-start;
-    margin: 0 5%;
+    margin: 0%;
 
 }
 .searchBox{
     height: 100%;
-    width: 25%;
+    width: 45%;
     margin: 0 5%;
 }
 .searchBox > div{
@@ -152,3 +152,40 @@ body{
     height: 50%;
     border-radius: 25px;
 }
+.popTitle{
+    height: 20%;
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.popSongQueue{
+    height: 80%;   
+    justify-content: flex-start;
+    align-items: center;
+    overflow: scroll;
+
+}
+.song{
+    height: 80%;
+    width: 12%;
+    margin: 20px;
+    flex-shrink: 0;
+    /* margin: 10%; */
+}
+.popImg{
+    height: 75%;
+    width: 100%;
+}
+.popSongName{
+    height: 13%;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 5px;
+    overflow:hidden;
+}
+.popAlbumName{
+    height: 12%;
+    font-size: 12px;
+    overflow:hidden;
+    padding: 0 6px;
+}   
