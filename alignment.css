@@ -3,9 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid rgb(0, 0, 0);
+    border: 0.1px solid rgba(160, 160, 160, 0.402);
     font-family: 'Poppins', sans-serif;
+    /* background-color: rgba(29, 29, 29, 0.795);
+    color: white; */
+    /* for firefox  */
+    scrollbar-width: none; 
+    /* for Edge */
+    -ms-overflow-style: none;
 }
+*::-webkit-scrollbar {
+    display: none;
+}
+  html {
+    scroll-behavior: smooth;
+    position: fixed;
+  }
 body{
     width: 100vw;
     height: 100vh;
@@ -86,7 +99,7 @@ body{
     height: 30%;
 }
 .popularArtists{
-    height: 30%;
+    height: 20%;
 }
 .banner > div:first-child{
     height: 25%;
@@ -163,6 +176,7 @@ body{
     justify-content: flex-start;
     align-items: center;
     overflow: scroll;
+    padding: 0 20px;
 
 }
 .song{
@@ -189,3 +203,55 @@ body{
     overflow:hidden;
     padding: 0 6px;
 }   
+.popArtistsHeading{
+    height: 30%;
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    align-items: center;
+}
+.popArtists{
+    height: 70%;
+    overflow: scroll;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 40px;
+}
+.artist{
+    /* width: 10%; */
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/*  */
+.bottomPanel{
+    width: 100vw;
+    flex-shrink: 0;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+}
+.musicVisulaizer{
+    width: 5%;
+    height: 100%;
+}
+.songDetail{
+    width: 20%;
+}
+.songControlArea{
+    width: 10%;
+}
+.songTimeArea{
+    width: 45%;
+}
+.songVolumeControlArea{
+    width: 20%;
+}
