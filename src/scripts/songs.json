@@ -1,0 +1,10 @@
+{
+    "malare":{
+        "title":"Malare",
+        "artist":"VSV",
+        "album":"Premam",
+        "source":"../Malare/Malare.mp4",
+        "thumbnailHQ":"../Malare/MalareHQ.jpg",
+        "thumbnailHD":"../Malare/MalareHD.jpg"
+    }
+}
