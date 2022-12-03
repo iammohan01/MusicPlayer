@@ -1,5 +1,5 @@
 
-fetch("/MusicPlayer/src/scripts/songs.json")
+fetch("https://iammohan01.github.io/MusicPlayer/src/scripts/songs.json")
   .then(response => response.json())
   .then(json => save(json));
 
