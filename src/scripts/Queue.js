@@ -1,10 +1,13 @@
-function createQueue(){
+let songQueueNo = 0 ;
+function createQueue(songData){
     const QUEUE = document.getElementById("queue");
 
     let box = document.createElement("div");
     box.classList.add("flx","queueList");
     let songNumber = document.createElement("div");
     songNumber.classList.add("songNumber","flxCenter");
+    songNumber.innerText = songQueueNo++ < 10 ? "0"+songQueueNo : songQueueNo ;
+
     let songImage = document.createElement("div");
     songImage.classList.add("songImage", "flxCenter")
     let songTitle = document.createElement("div");
@@ -13,10 +16,10 @@ function createQueue(){
 
     let songName = document.createElement("div");
     songName.classList.add("songName");
-    songName.innerText = "On My Way";
+    songName.innerText = songData[0];
     let songAuthor = document.createElement("div");
     songAuthor.classList.add("songAuthor")
-    songAuthor.innerText = "Cartoon";
+    songAuthor.innerText = songData[1].artist;
 
     songTitle.appendChild(songName);
     songTitle.appendChild(songAuthor);

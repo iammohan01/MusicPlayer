@@ -1,10 +1,35 @@
 {
     "malare":{
         "title":"Malare",
-        "artist":"VSV",
+        "artist":"Vijay Yesudas",
         "album":"Premam",
-        "source":"../Malare/Malare.mp4",
-        "thumbnailHQ":"../Malare/MalareHQ.jpg",
-        "thumbnailHD":"../Malare/MalareHD.jpg"
+        "source":"src/Malare/Malare.mp3",
+        "thumbnailHQ":"src/Malare/MalareHQ.jpg",
+        "thumbnailHD":"src/Malare/MalareHD.jpg"
+    },
+    "TheLifeofRam":{
+        "title":"TheLifeofRam",
+        "artist":"Deepu",
+        "album":"96",
+        "source":"src/TheLifeofRam/TheLifeofRam.mp3",
+        "thumbnailHQ":"src/TheLifeofRam/TheLifeofRamHQ.jpg",
+        "thumbnailHD":"src/TheLifeofRam/TheLifeofRamHD.jpg"
+    },
+    "Darshana":{
+        "title":"Darshana",
+        "artist":"Darshana Rajendran",
+        "album":"Hridayam",
+        "source":"src/Darshana/Darshana.mp3",
+        "thumbnailHQ":"src/Darshana/DarshanaHQ.jpg",
+        "thumbnailHD":"src/TheLifDarshanaeofRam/DarshanaHD.jpg"
+    },
+    "Kurumugil":{
+        "title":"Kurumugil",
+        "artist":"Sai Vignesh",
+        "album":"Sita Ramam",
+        "source":"src/Kurumugil/Kurumugil.mp3",
+        "thumbnailHQ":"src/Kurumugil/KurumugilHQ.jpg",
+        "thumbnailHD":"src/Kurumugil/KurumugilHD.jpg"
     }
+    
 }

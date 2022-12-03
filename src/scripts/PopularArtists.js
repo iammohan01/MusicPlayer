@@ -5,6 +5,3 @@ function popularArtists(){
 
     popArtists.appendChild(artist);
 }
-// for (let index = 0; index < 20; index++) {
-//    popularArtists();
-// }

@@ -5,6 +5,9 @@ fetch("/src/scripts/songs.json")
 let v ;
 function save(le){
    v = le ;
-//    (Object.entries(v)).forEach(ele=>console.log(ele))
+   (Object.entries(v)).forEach(ele=>{
+    console.log(ele);
+    createQueue(ele);
+   })
 }
 
