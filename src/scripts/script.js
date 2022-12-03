@@ -3,13 +3,11 @@ fetch("/src/scripts/songs.json")
   .then(response => response.json())
   .then(json => save(json));
 
-let v ;
+let loadedSongsJSON= [] ;
 function save(le){
-   v = le ;
-  //  let x = [];
-   (Object.entries(v)).forEach(ele=>{
-    console.log(ele);
-    // x.push(ele)
+    loadedSongsJSON.push(le);
+   (Object.entries(le)).forEach(ele=>{
+    // console.log(ele);
     createQueue(ele);
    })
 }
