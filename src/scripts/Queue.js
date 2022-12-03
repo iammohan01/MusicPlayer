@@ -25,9 +25,25 @@ function createQueue(songData){
     songTitle.appendChild(songAuthor);
 
     let songPlayButton = document.createElement("div");
-    songPlayButton.classList.add("songPlayButton","flxCenter")
+    songPlayButton.classList.add("songPlayButton","flxCenter");
+    songPlayButton.addEventListener("click",(ls)=>{
+        // audioPlayer.src = `src/${songData[0]}/${songData[0]}.mp3`
+        
+        console.log(ls);
+        if (!isPlaying){
+            songPlayButton.innerHTML = `<i class="bi bi-pause-circle-fill"></i>`
+            audioPlayer.play();
+        }
+        else{
+            songPlayButton.innerHTML = `<i class="bi bi-play-circle-fill"></i>`
+            audioPlayer.pause();
+        }
+        isPlaying = !isPlaying
+    });
+
     let pauseBtn = document.createElement("i");
     pauseBtn.classList.add("bi","bi-play-circle-fill","pauseBtn")
+    // pauseBtn.cance
     songPlayButton.appendChild(pauseBtn);
 
     box.appendChild(songNumber);
@@ -36,5 +52,13 @@ function createQueue(songData){
     box.appendChild(songPlayButton)
 
     QUEUE.appendChild(box)
+    if (audioPlayer.src == ""){
+        audioPlayer = new Audio(`src/${songData[0]}/${songData[0]}.mp3`);
+    }
 
 }
+
+
+
+var audioPlayer = new Audio();
+let isPlaying = false ;
