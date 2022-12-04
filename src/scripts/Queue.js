@@ -10,7 +10,7 @@ function createQueue(songData){
 
     let songImage = document.createElement("div");
     songImage.classList.add("songImage", "flxCenter");
-    songImage.style.backgroundImage = `url(MusicPlayer/src/${songData[0]}/${songData[0]}HQ.jpg)`
+    songImage.style.backgroundImage = `url(src/${songData[0]}/${songData[0]}HQ.jpg)`
     let songTitle = document.createElement("div");
     songTitle.classList.add("songTitle","flxCenter","flxColumn");
 
@@ -33,7 +33,7 @@ function createQueue(songData){
         console.log(th);
         console.log(th.target.dataset.song);
         if (!audioPlayer.src.includes(th.target.dataset.song)){
-            audioPlayer.src = `MusicPlayer/src/${th.target.dataset.song}/${th.target.dataset.song}.mp3`
+            audioPlayer.src = `src/${th.target.dataset.song}/${th.target.dataset.song}.mp3`
             console.log(audioPlayer.src);
             isPlaying = isPlaying == false ? false : true ; 
         }
@@ -62,7 +62,7 @@ function createQueue(songData){
 
     QUEUE.appendChild(box)
     if (audioPlayer.src == ""){
-        audioPlayer = new Audio(`MusicPlayer/src/${songData[0]}/${songData[0]}.mp3`);
+        audioPlayer = new Audio(`src/${songData[0]}/${songData[0]}.mp3`);
     }
 
 }
