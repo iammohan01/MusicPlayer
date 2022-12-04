@@ -10,7 +10,7 @@ function createQueue(songData){
 
     let songImage = document.createElement("div");
     songImage.classList.add("songImage", "flxCenter");
-    songImage.style.backgroundImage = `url(src/${songData[0]}/${songData[0]}HQ.jpg)`
+    songImage.style.backgroundImage = `url(MusicPlayer/src/${songData[0]}/${songData[0]}HQ.jpg)`
     let songTitle = document.createElement("div");
     songTitle.classList.add("songTitle","flxCenter","flxColumn");
 
@@ -30,23 +30,25 @@ function createQueue(songData){
     songPlayButton.dataset.song = songData[0] ;
     songPlayButton.addEventListener("click",(th)=>{
         console.log(audioPlayer.src.includes(th.target.dataset.song));
+        console.log(th);
+        console.log(th.target.dataset.song);
         if (!audioPlayer.src.includes(th.target.dataset.song)){
-            audioPlayer.src = `src/${th.target.dataset.song}/${th.target.dataset.song}.mp3`
+            audioPlayer.src = `MusicPlayer/src/${th.target.dataset.song}/${th.target.dataset.song}.mp3`
             console.log(audioPlayer.src);
-            isPlaying = !isPlaying
+            isPlaying = isPlaying == false ? false : true ; 
         }
         if (!isPlaying){
             console.log("player");
-            songPlayButton.innerHTML = `<i class="bi bi-pause-circle-fill"></i>`
+            songPlayButton.innerHTML = `<i class="bi bi-pause-circle-fill" data-song="${th.target.dataset.song}"></i>`
             audioPlayer.play();
         }
         else{
             console.log("pauser");
-            songPlayButton.innerHTML = `<i class="bi bi-play-circle-fill"></i>`
+            songPlayButton.innerHTML = `<i class="bi bi-play-circle-fill" data-song="${th.target.dataset.song}"></i>`
             audioPlayer.pause();
         }
         isPlaying = !isPlaying
-    });
+    },{ capture : true});
 
     let pauseBtn = document.createElement("i");
     pauseBtn.classList.add("bi","bi-play-circle-fill","pauseBtn")
@@ -60,7 +62,7 @@ function createQueue(songData){
 
     QUEUE.appendChild(box)
     if (audioPlayer.src == ""){
-        audioPlayer = new Audio(`src/${songData[0]}/${songData[0]}.mp3`);
+        audioPlayer = new Audio(`MusicPlayer/src/${songData[0]}/${songData[0]}.mp3`);
     }
 
 }
